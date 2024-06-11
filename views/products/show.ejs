@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title><%= product.name %></title>
+  </head>
+  <body class="bg-gray-100 p-8">
+    <!-- Display the product name -->
+    <h1 class="text-3xl font-bold mb-4"><%= product.name %></h1>
+
+    <!-- Display the product details -->
+    <ul class="mb-4">
+      <li class="text-gray-700">Price: $<%= product.price %></li>
+      <li class="text-gray-700">Category: <%= product.category %></li>
+    </ul>
+
+    <!-- Navigation buttons -->
+    <div class="space-x-4 flex">
+      <!-- Back button -->
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        <a href="/products">Back</a>
+      </button>
+
+      <!-- Edit button -->
+      <button
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+      >
+        <a href="/products/<%= product._id %>/edit">Edit</a>
+      </button>
+
+      <!-- Category button -->
+      <button
+        class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded"
+      >
+        <a href="/products?category=<%= product.category %>"
+          ><%= product.category %></a
+        >
+      </button>
+    </div>
+  </body>
+</html>
