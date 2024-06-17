@@ -3,9 +3,8 @@
 **
 Copy this project:
 ```
-git clone
+git clone 
 npm i / yarn
-Start coding
 ```
 **
 
