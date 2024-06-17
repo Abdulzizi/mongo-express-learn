@@ -1,7 +1,12 @@
 # How to copy this project
 
-**- Git clone this repo**
-**- npm install / yarn**
-**- Start coding**
+**
+Copy this project:
+```
+git clone
+npm i / yarn
+Start coding
+```
+**
 
 > Just do it
